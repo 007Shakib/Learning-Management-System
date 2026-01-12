@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/images/programming_2620993.png" type="image/x-icon">
+    <title>Online Learning Platform</title>
+</head>
+<body>
+    <div id="bg_pic">
+        <header class="header">
+            <div class="logo"><a href="#">LMS</a></div>
+
+            <nav class="nav">
+            <a href="#" class="home">Home</a>
+            <a href="#">Courses</a>
+            <a href="#">Tutorial</a>
+            <a href="#">Certificate</a>
+            <a href="#">Enroll</a>
+            <a href="#">Contact Us</a>
+            </nav>
+
+            <div class="auth">
+            <a href="log-in.html">Login</a>
+            <a href="register.html">Register</a>
+            </div>
+        </header>
+
+    <section class="hero">
+    <div class="hero-content">
+        <div class="search-box">
+            <input type="text" placeholder="Search Here...">
+            <button>🔍</button>
+        </div>
+
+        <p class="subtitle">We have some best courses out there!</p>
+        <a href="#" class="view-btn">View All Courses »</a>
+    </div>
+
+    <div class="stats">
+        <div class="stat">
+            <h2>32</h2>
+            <p>Courses</p>
+        </div>
+        <div class="stat">
+            <h2>40</h2>
+            <p>Members</p>
+        </div>
+        <div class="stat">
+            <h2>15</h2>
+            <p>Authors</p>
+        </div>
+        <div class="stat">
+            <h2>20</h2>
+            <p>Subjects</p>
+        </div>
+    </div>
+    </section>
+    </div>
+    <section class="material">
+        <div class="text-box">
+        <h1>Explore!</h1>
+        <h2>HTML</h2>
+        <p>The language for building web pages</p>
+
+        <button class="btn green">Learn HTML</button>
+        <button class="btn yellow">Video Tutorial</button>
+        <button class="btn dark">HTML Reference</button>
+        <button class="btn pink">Get Certified</button>
+         </div>
+
+        <div class="example-box">
+        <h3>Code Interface</h3>
+
+        <img src="images/html1.png" alt="Example preview">
+        </div>
+    </section>
+
+    <section class="material1">
+        <div class="example-box">
+        <h3>Code Interface</h3>
+
+        <img src="images/css1.png" alt="Example preview">
+        </div>
+
+        <div class="text-box">
+        <h1>Explore!</h1>
+        <h2>CSS</h2>
+        <p>The language for design web pages</p>
+
+        <button class="btn green">Learn CSS</button>
+        <button class="btn yellow">Video Tutorial</button>
+        <button class="btn dark">CSS Reference</button>
+        <button class="btn pink">Get Certified</button>
+         </div>
+    </section>
+    <section class="material2">
+        <div class="text-box">
+        <h1>Explore!</h1>
+        <h2>JavaScript</h2>
+        <p>The language for responsive web pages</p>
+
+        <button class="btn green">Learn JS</button>
+        <button class="btn yellow">Video Tutorial</button>
+        <button class="btn dark">JS Reference</button>
+        <button class="btn pink">Get Certified</button>
+         </div>
+
+        <div class="example-box">
+        <h3>Code Interface</h3>
+
+        <img src="images/js1.png" alt="Example preview">
+        </div>
+    </section>
+
+    <section class="about-section">
+    <h2>About Us</h2>
+    <div class="about-box">
+    <p>
+      We are a Learning Management System (LMS) designed to help students learn
+      programming, web development, and many other skills through structured
+      courses, tutorials, and certifications. Our mission is to make learning simple, interactive, and accessible for
+      everyone. Whether you are a beginner or advanced learner, we are here to
+      support your journey. We provide quality content, expert instructors, and hands-on practice
+      modules so you can upgrade your skills and build your career with confidence.
+    </p>
+    </div>
+    </section>
+
+<footer class="footer">
+  <p>© 2026 LMS - Learning Management System</p>
+</footer>
+<script>
+  const links = document.querySelectorAll(".nav a");
+
+  links.forEach(link => {
+    if (link.href === window.location.href) {
+      link.classList.add("active");
+    }
+  });
+</script>
+</body>
+</html>
