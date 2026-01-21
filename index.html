@@ -8,22 +8,23 @@
     <title>Online Learning Platform</title>
 </head>
 <body>
+    <div id="particles-js"></div>
     <div id="bg_pic">
         <header class="header">
             <div class="logo"><a href="#">LMS</a></div>
 
             <nav class="nav">
             <a href="#" class="home">Home</a>
-            <a href="#">Courses</a>
-            <a href="#">Tutorial</a>
-            <a href="#">Certificate</a>
-            <a href="#">Enroll</a>
-            <a href="#">Contact Us</a>
+            <a href="/courses/courses.html">Courses</a>
+            <a href="/tutorial/tutorial.html">Tutorial</a>
+            <a href="/certificate/certificate.html">Certificate</a>
+            <a href="/enroll/enroll.html">Enroll</a>
+            <a href="#contact">Contact Us</a>
             </nav>
 
             <div class="auth">
-            <a href="log-in.html">Login</a>
-            <a href="register.html">Register</a>
+            <a onclick="goToLogin()" href="javascript:void(0)">Login</a>
+            <a onclick="goToRegister()" href="javascript:void(0)">Register</a>
             </div>
         </header>
 
@@ -34,7 +35,7 @@
             <button>🔍</button>
         </div>
 
-        <p class="subtitle">We have some best courses out there!</p>
+        <p class="subtitle">We have some best courses for web-developers!</p>
         <a href="#" class="view-btn">View All Courses »</a>
     </div>
 
@@ -62,83 +63,109 @@
         <div class="text-box">
         <h1>Explore!</h1>
         <h2>HTML</h2>
-        <p>The language for building web pages</p>
-
-        <button class="btn green">Learn HTML</button>
-        <button class="btn yellow">Video Tutorial</button>
-        <button class="btn dark">HTML Reference</button>
-        <button class="btn pink">Get Certified</button>
-         </div>
-
+        <p1>Blueprints and structural beams for every webpage you visit.</p1>
+        <button onclick="goToPage()" class="btn green">Learn HTML</button>
+        </div>
         <div class="example-box">
-        <h3>Code Interface</h3>
+        <h3>HTML Introduction Video</h3>
 
-        <img src="images/html1.png" alt="Example preview">
+        <div class="video-wrapper">
+        <iframe 
+        src="https://www.youtube.com/embed/ok-plXXHlWw"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+        </iframe>
+        </div>
         </div>
     </section>
 
     <section class="material1">
         <div class="example-box">
-        <h3>Code Interface</h3>
+        <h3>CSS Introduction Video</h3>
 
-        <img src="images/css1.png" alt="Example preview">
+        <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/OEV8gMkCHXQ?si=L8YR60XpeS6TvNO9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
         </div>
 
         <div class="text-box">
         <h1>Explore!</h1>
         <h2>CSS</h2>
-        <p>The language for design web pages</p>
+        <p1>A "Dress Code" for Websites</p1>
 
-        <button class="btn green">Learn CSS</button>
-        <button class="btn yellow">Video Tutorial</button>
-        <button class="btn dark">CSS Reference</button>
-        <button class="btn pink">Get Certified</button>
-         </div>
+        <button onclick="goTocss()" class="btn green">Learn CSS</button>
+        </div>
     </section>
     <section class="material2">
         <div class="text-box">
         <h1>Explore!</h1>
         <h2>JavaScript</h2>
-        <p>The language for responsive web pages</p>
+        <p1>Interactivity and dynamic behavior to web pages</p1>
 
-        <button class="btn green">Learn JS</button>
-        <button class="btn yellow">Video Tutorial</button>
-        <button class="btn dark">JS Reference</button>
-        <button class="btn pink">Get Certified</button>
-         </div>
+        <button onclick="goTojs()" class="btn green">Learn JS</button>
+        </div>
 
         <div class="example-box">
-        <h3>Code Interface</h3>
+        <h3>JS Introduction Video</h3>
 
-        <img src="images/js1.png" alt="Example preview">
+        <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/DHjqpvDnNGE?si=JFeYdidkVd2xJHKq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
         </div>
     </section>
 
-    <section class="about-section">
-    <h2>About Us</h2>
-    <div class="about-box">
-    <p>
-      We are a Learning Management System (LMS) designed to help students learn
-      programming, web development, and many other skills through structured
-      courses, tutorials, and certifications. Our mission is to make learning simple, interactive, and accessible for
-      everyone. Whether you are a beginner or advanced learner, we are here to
-      support your journey. We provide quality content, expert instructors, and hands-on practice
-      modules so you can upgrade your skills and build your career with confidence.
-    </p>
+    <section class="about-section" id="contact">
+    <div class="about-content">
+    
+    <div class="col-main">
+      <h2 class="logo1"><span>&lt;&gt;</span> LMS</h2>
+      <p>Master coding with our expert-led courses. Join hundreds of students learning today.</p>
+      <p class="small-text">License: xyz007</p>
     </div>
+
+    <div class="col">
+      <h4>Quick Links</h4>
+      <a href="#">Home</a>
+      <a href="#">Courses</a>
+      <a href="#">About Us</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <div class="col">
+      <h4>Contact</h4>
+      <p>📞 017#########</p>
+      <p>✉️ shakib@gmail.com</p>
+      <p>📍 Dhaka, Bangladesh</p>
+    </div>
+
+    <div class="col">
+      <h4>Legal</h4>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Use</a>
+      <a href="#">Refund Policy</a>
+    </div>
+
+    </div>
+
+    <div class="bottom-bar">
+    <div>
+        <h4>Connect with us</h4>
+    </div>
+    <div class="socials">
+      <a href="#"><img src="images/fb.png"></a>
+      <a href="#"><img src="images/ig.png"></a>
+      <a href="#"><img src="images/linkedin.png"></a>
+    </div>
+    </div>
+    <footer class="footer">
+    <p>©Copyright 2026 LMS - Learning Management System</p>
+    </footer>
     </section>
 
-<footer class="footer">
-  <p>© 2026 LMS - Learning Management System</p>
-</footer>
-<script>
-  const links = document.querySelectorAll(".nav a");
+<script src="particles.js-master/particles.min.js" defer></script>
+<script src="script.js" defer></script>
 
-  links.forEach(link => {
-    if (link.href === window.location.href) {
-      link.classList.add("active");
-    }
-  });
-</script>
 </body>
 </html>
