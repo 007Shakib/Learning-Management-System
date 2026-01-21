@@ -11,17 +11,17 @@ particlesJS.load(
   'particles.js-master/particles.json'
 );
 function goToPage() {
-  window.location.href = "practice/practice.html";
+  window.location.href = "/practice/practice.html";
 }
 function goTocss() {
-  window.location.href = "practice/practicecss.html";
+  window.location.href = "/practice/practicecss.html";
 }
 function goTojs() {
-  window.location.href = "practice/practicejs.html";
+  window.location.href = "/practice/practicejs.html";
 }
 function goToRegister() {
-    window.location.href = 'logreg/register.html';
+    window.location.href = '/logreg/register.html';
 }
 function goToLogin() {
-    window.location.href = 'logreg/log-in.html';
+    window.location.href = '/logreg/log-in.html';
 }
