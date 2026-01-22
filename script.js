@@ -13,7 +13,7 @@ links.forEach(link => {
 const _currentScript = document.querySelector('script[src$="script.js"]');
 const _base = _currentScript ? new URL('.', _currentScript.src).href : (window.location.origin + '/');
 
-const particlesConfig = new URL('particles.js-master/particles.json', _base).href;
+const particlesConfig = new URL('particles/particles.json', _base).href;
 if (window.particlesJS && typeof window.particlesJS.load === 'function') {
   window.particlesJS.load('particles-js', particlesConfig);
 }
