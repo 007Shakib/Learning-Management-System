@@ -34,8 +34,10 @@
 
 </div>
 
+<script src="../script.js"></script>
+
 <script>
-fetch("../data/html.json")
+fetch(new URL('practice/data/html.json', _base).href)
 .then(response => response.json())
 .then(tags => {
 
