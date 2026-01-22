@@ -33,3 +33,27 @@ function goToRegister() {
 function goToLogin() {
     window.location.href = new URL('logreg/log-in.html', _base).href;
 }
+particlesJS("particles-js", {
+  particles: {
+    number: {
+      value: 80,
+      density: {
+        enable: true,
+        value_area: 800
+      }
+    },
+    color: { value: "#000000" },
+    line_linked: {
+      enable: true,
+      color: "#000000"
+    },
+    move: { speed: 6 }
+  },
+  interactivity: {
+    events: {
+      onhover: { enable: true, mode: "repulse" },
+      onclick: { enable: true, mode: "push" }
+    }
+  },
+  retina_detect: true
+});
