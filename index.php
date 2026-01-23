@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/LMS/style.css">
+    <link rel="shortcut icon" href="/LMS/images/programming_2620993.png" type="image/x-icon">
+    <title>Online Learning Platform</title>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div id="bg_pic">
+        <header class="header">
+            <div class="logo"><a href="#">LMS</a></div>
+
+            <nav class="nav">
+            <a href="#" class="home">Home</a>
+            <a href="/LMS/courses/courses.php">Courses</a>
+            <a href="/LMS/tutorial/tutorial.php">Tutorial</a>
+            <a href="/LMS/certificate/certificate.php">Certificate</a>
+            <a href="/LMS/enroll/enroll.php">Enroll</a>
+            <a href="#contact">Contact Us</a>
+            </nav>
+
+            <?php require $_SERVER['DOCUMENT_ROOT'].'/LMS/includes/auth_links.php'; ?>
+        </header>
+
+    <section class="hero">
+    <div class="hero-content">
+        <div class="search-box">
+            <input type="text" placeholder="Search Here...">
+            <button>🔍</button>
+        </div>
+
+        <p class="subtitle">We have some best courses for web-developers!</p>
+        <a href="#" class="view-btn">View All Courses »</a>
+    </div>
+
+    <div class="stats">
+        <div class="stat">
+            <h2>32</h2>
+            <p>Courses</p>
+        </div>
+        <div class="stat">
+            <h2>40</h2>
+            <p>Members</p>
+        </div>
+        <div class="stat">
+            <h2>15</h2>
+            <p>Authors</p>
+        </div>
+        <div class="stat">
+            <h2>20</h2>
+            <p>Subjects</p>
+        </div>
+    </div>
+    </section>
+    </div>
+    <section class="material">
+        <div class="text-box">
+        <h1>Explore!</h1>
+        <h2>HTML</h2>
+        <p1>Blueprints and structural beams for every webpage you visit.</p1>
+        <button onclick="goToPage()" class="btn green">Learn HTML</button>
+        </div>
+        <div class="example-box">
+        <h3>HTML Introduction Video</h3>
+
+        <div class="video-wrapper">
+        <iframe 
+        src="https://www.youtube.com/embed/ok-plXXHlWw"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+        </iframe>
+        </div>
+        </div>
+    </section>
+
+    <section class="material1">
+        <div class="example-box">
+        <h3>CSS Introduction Video</h3>
+
+        <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/OEV8gMkCHXQ?si=L8YR60XpeS6TvNO9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        </div>
+
+        <div class="text-box">
+        <h1>Explore!</h1>
+        <h2>CSS</h2>
+        <p1>A "Dress Code" for Websites</p1>
+
+        <button onclick="goTocss()" class="btn green">Learn CSS</button>
+        </div>
+    </section>
+    <section class="material2">
+        <div class="text-box">
+        <h1>Explore!</h1>
+        <h2>JavaScript</h2>
+        <p1>Interactivity and dynamic behavior to web pages</p1>
+
+        <button onclick="goTojs()" class="btn green">Learn JS</button>
+        </div>
+
+        <div class="example-box">
+        <h3>JS Introduction Video</h3>
+
+        <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/DHjqpvDnNGE?si=JFeYdidkVd2xJHKq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        </div>
+    </section>
+
+    <section class="about-section" id="contact">
+    <div class="about-content">
+    
+    <div class="col-main">
+      <h2 class="logo1"><span>&lt;&gt;</span> LMS</h2>
+      <p>Master coding with our expert-led courses. Join hundreds of students learning today.</p>
+      <p class="small-text">License: xyz007</p>
+    </div>
+
+    <div class="col">
+      <h4>Quick Links</h4>
+      <a href="#">Home</a>
+      <a href="#">Courses</a>
+      <a href="#">About Us</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <div class="col">
+      <h4>Contact</h4>
+      <p>📞 017#########</p>
+      <p>✉️ shakib@gmail.com</p>
+      <p>📍 Dhaka, Bangladesh</p>
+    </div>
+
+    <div class="col">
+      <h4>Legal</h4>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Use</a>
+      <a href="#">Refund Policy</a>
+    </div>
+
+    </div>
+
+    <div class="bottom-bar">
+    <div>
+        <h4>Connect with us</h4>
+    </div>
+    <div class="socials">
+      <a href="#"><img src="images/fb.png"></a>
+      <a href="#"><img src="images/ig.png"></a>
+      <a href="#"><img src="images/linkedin.png"></a>
+    </div>
+    </div>
+    <footer class="footer">
+    <p>©Copyright 2026 LMS - Learning Management System</p>
+    </footer>
+    </section>
+
+<script src="particles.js-master/particles.min.js" defer></script>
+<script src="script.js" defer></script>
+
+</body>
+</html>
