@@ -6,7 +6,7 @@
 }
 .auth-bg {
     min-height: 100vh;
-    background: url("hero.jpg") center/cover no-repeat;
+    background: url("/images/pexels-codioful-7135067.jpg") center/cover no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
